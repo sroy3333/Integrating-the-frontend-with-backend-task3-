@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+    <h2>Chat App</h2>
     <form onsubmit="signup(event)" method="POST">
        <label for="name">Enter name</label>
        <input type="text" id="name" name="name" required />
@@ -36,7 +37,7 @@
                 const response = await axios.post('http://localhost:7000/user/signup', signUpDetails)
                 if(response.status === 201) {
                     alert('Successfully signed up');
-                    window.location.href = "/login/login.html"
+                    window.location.href = "/login.html"
                 } else {
                     throw new Error('Failed to login')
                 }
