@@ -1,6 +1,5 @@
 const User = require('../models/users');
 const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 
 function isStringInvalid(string) {
     return !string || string.trim() === '';
